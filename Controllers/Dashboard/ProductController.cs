@@ -70,6 +70,7 @@ namespace Peak.Discoun.Areas.Admin.Controllers
                 {
                     Name = product.Name,
                     Description = product.Description,
+                    Stock = product.Stock,
                     Price = product.Price,
                     ImagePath = uniqueFileName
                 };
@@ -90,6 +91,7 @@ namespace Peak.Discoun.Areas.Admin.Controllers
             {   Id=product.Id,
                 Name = product.Name,
                 Description = product.Description,
+                Stock = product.Stock,
                 Price = product.Price,
                 ImagePath = product.ImagePath
             };
@@ -111,6 +113,7 @@ namespace Peak.Discoun.Areas.Admin.Controllers
                 {   Id=product.Id,
                     Name = product.Name,
                     Description = product.Description,
+                    Stock = product.Stock,
                     Price = product.Price,
                     ImagePath = uniqueFileName
                 };

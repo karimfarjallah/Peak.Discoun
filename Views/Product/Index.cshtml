@@ -16,6 +16,7 @@
         </div>
         <center>
             <img class="card-img-top" style="height: 110px; width: auto; position:center " src="@photoPath" asp-append-version="true" />
+            <h3><b>Stock : </b> @product.Stock</h3>
             <center />
             <div class="card-header text-center">
                 <a asp-controller="product" asp-action="details" asp-route-id="@product.Id"
@@ -23,6 +24,6 @@
                 <a asp-action="Edit" asp-route-id="@product.Id" class="btn btn-primary m-1">Edit</a>
                 <a asp-action="Delete" asp-route-id="@product.Id" class="btn btn-danger m-1">Delete</a>
             </div>
-    </div>
+</div>
 }
 </div>

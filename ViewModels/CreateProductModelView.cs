@@ -16,6 +16,7 @@ namespace Peak.Discoun.ViewModels
 
         [Column(TypeName = "decimal(18,4)")]
         public decimal Stock { get; set; }
+        [Column(TypeName = "decimal(18,4)")]
         public decimal Price { get; set; }
         public IFormFile Image { get; set; }
         public string ImagePath { get; set; }
