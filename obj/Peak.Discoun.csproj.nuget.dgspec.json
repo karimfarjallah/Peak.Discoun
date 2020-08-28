@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\karim\\Desktop\\Peak_discount\\Peak.Discoun\\Peak.Discoun.csproj": {}
+    "C:\\Users\\karim\\Documents\\GitHub\\Peak.Discoun\\Peak.Discoun.csproj": {}
   },
   "projects": {
-    "C:\\Users\\karim\\Desktop\\Peak_discount\\Peak.Discoun\\Peak.Discoun.csproj": {
+    "C:\\Users\\karim\\Documents\\GitHub\\Peak.Discoun\\Peak.Discoun.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\karim\\Desktop\\Peak_discount\\Peak.Discoun\\Peak.Discoun.csproj",
+        "projectUniqueName": "C:\\Users\\karim\\Documents\\GitHub\\Peak.Discoun\\Peak.Discoun.csproj",
         "projectName": "Peak.Discoun",
-        "projectPath": "C:\\Users\\karim\\Desktop\\Peak_discount\\Peak.Discoun\\Peak.Discoun.csproj",
+        "projectPath": "C:\\Users\\karim\\Documents\\GitHub\\Peak.Discoun\\Peak.Discoun.csproj",
         "packagesPath": "C:\\Users\\karim\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\karim\\Desktop\\Peak_discount\\Peak.Discoun\\obj\\",
+        "outputPath": "C:\\Users\\karim\\Documents\\GitHub\\Peak.Discoun\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\karim\\AppData\\Roaming\\NuGet\\NuGet.Config",
