@@ -1,17 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Authorization;
+﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Peak.Discoun.Models;
 using Peak.Discoun.Repository;
 using Peak.Discoun.ViewModels;
+using System;
+using System.IO;
 
-namespace Peak.Discoun.Areas.Admin.Controllers
+namespace Peak.Discoun.Dashboard.Controllers
 {
+    [Authorize(Roles ="admin")]
     public class ProductController : Controller
     {
         private readonly IProductRepository _productRepository;

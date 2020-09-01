@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Peak.Discoun.Areas.Admin.Controllers
 {
-
    
+
     public class AccountController : Controller
     {
         private readonly UserManager<IdentityUser> userManager;
@@ -46,7 +46,7 @@ namespace Peak.Discoun.Areas.Admin.Controllers
                 if (result.Succeeded)
                 {
                     await signInManager.SignInAsync(user, isPersistent: false);
-                    return RedirectToAction("index", "Product");
+                    return RedirectToAction("index", "Home");
                 }
 
                 foreach (var error in result.Errors)
@@ -62,7 +62,7 @@ namespace Peak.Discoun.Areas.Admin.Controllers
         public async Task<IActionResult> Logout()
         {
             await signInManager.SignOutAsync();
-            return RedirectToAction("index", "Product");
+            return RedirectToAction("index", "Home");
         }
 
 
@@ -90,7 +90,7 @@ namespace Peak.Discoun.Areas.Admin.Controllers
                     }
                     else
                     {
-                        return RedirectToAction("index", "Product");
+                        return RedirectToAction("index", "Home");
                     }
                     
                 }

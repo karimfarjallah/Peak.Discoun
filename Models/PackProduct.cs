@@ -8,10 +8,7 @@ using System.Threading.Tasks;
 namespace Peak.Discoun.Models
 {
     public class PackProduct
-    {  [Key]
-       [Column(Order =1)]
-       public int Id { get; set; }
-
+    { 
         public int PackId { get; set; }
     
         public int ProductId { get; set; }

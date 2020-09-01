@@ -9162,9 +9162,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\karim\\Documents\\GitHub\\Peak.Discoun\\Peak.Discoun.csproj",
-      "projectName": "Peak.Discoun",
-      "projectPath": "C:\\Users\\karim\\Documents\\GitHub\\Peak.Discoun\\Peak.Discoun.csproj",
+      "projectUniqueName": "C:\\Users\\karim\\Documents\\GitHub\\Peak.Discoun\\Peak.Discoun.Dashboard.csproj",
+      "projectName": "Peak.Discoun.Dashboard",
+      "projectPath": "C:\\Users\\karim\\Documents\\GitHub\\Peak.Discoun\\Peak.Discoun.Dashboard.csproj",
       "packagesPath": "C:\\Users\\karim\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\karim\\Documents\\GitHub\\Peak.Discoun\\obj\\",
       "projectStyle": "PackageReference",

@@ -398,3 +398,5 @@ C:\Users\karim\Documents\GitHub\Peak.Discoun\obj\Debug\netcoreapp3.1\staticwebas
 C:\Users\karim\Documents\GitHub\Peak.Discoun\obj\Debug\netcoreapp3.1\Peak.Discoun.dll
 C:\Users\karim\Documents\GitHub\Peak.Discoun\obj\Debug\netcoreapp3.1\Peak.Discoun.pdb
 C:\Users\karim\Documents\GitHub\Peak.Discoun\obj\Debug\netcoreapp3.1\Peak.Discoun.genruntimeconfig.cache
+C:\Users\karim\Documents\GitHub\Peak.Discoun\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Login.cshtml.g.cs
+C:\Users\karim\Documents\GitHub\Peak.Discoun\obj\Debug\netcoreapp3.1\Razor\Views\Administration\CreateRole.cshtml.g.cs

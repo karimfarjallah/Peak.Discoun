@@ -1,15 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Peak.Discoun.Context;
 using Peak.Discoun.Models;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace Peak.Discoun.Controllers.Dashboard
 {
+    [Authorize(Roles = "admin")]
     public class PacksController : Controller
     {
         private readonly AppDbContext _context;
