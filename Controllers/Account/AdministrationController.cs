@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Peak.Discoun.ViewModels;
 
-namespace Peak.Discoun.Controllers.Account
+namespace Peak.Discount.Dashboard.Controllers.Account
 {
    [Authorize(Roles = "admin")]
     public class AdministrationController : Controller

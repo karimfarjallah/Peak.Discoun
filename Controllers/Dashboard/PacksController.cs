@@ -8,7 +8,7 @@ using System;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Peak.Discoun.Controllers.Dashboard
+namespace Peak.Discount.Dashboard.Controllers.Dashboard
 {
     [Authorize(Roles = "admin")]
     public class PacksController : Controller

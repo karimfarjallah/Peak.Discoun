@@ -1,11 +1,8 @@
-﻿using Peak.Discoun.Context;
-using Peak.Discoun.Models;
-using System;
+﻿using Peak.Discount.Dashboard.Context;
+using Peak.Discount.Dashboard.Models;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
-namespace Peak.Discoun.Repository
+namespace Peak.Discount.Dashboard.Repository
 {
     public class ProductRepository : IProductRepository
 

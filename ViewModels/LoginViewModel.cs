@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Peak.Discoun.ViewModels
+namespace Peak.Discount.Dashboard.ViewModels
 {
     public class LoginViewModel
     {

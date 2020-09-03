@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Peak.Discoun.ViewModels
+namespace Peak.Discount.Dashboard.ViewModels
 {
     public class RegisterViewModel
     {
