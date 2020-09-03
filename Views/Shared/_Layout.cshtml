@@ -45,7 +45,7 @@
                         <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contact</a>
                     </li>
                     <li class="nav-item mx-0 mx-lg-1">
-                        <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" asp-controller="Product" asp-action="Index">Go to Dashboard</a>
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" asp-controller="PackProduct" asp-action="Index">Go to Dashboard</a>
                     </li>
                 </ul>
             </div>
@@ -78,12 +78,13 @@
     </header>
 
     <!-- Portfolio Section -->
-    <section class="page-section portfolio" id="portfolio">
+    <section class="page-section portfolio h-75" id="portfolio">
         <div class="container">
 
             <!-- Portfolio Section Heading -->
             <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Pack</h2>
-            @RenderBody()
+         
+  <!-- /.content-wrapper --> 
             <!-- Icon Divider -->
             <div class="divider-custom">
                 <div class="divider-custom-line"></div>
@@ -95,78 +96,8 @@
 
             <!-- Portfolio Grid Items -->
             <div class="row">
-
-                <!-- Portfolio Item 1 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
-                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white">
-                                <i class="fas fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img class="img-fluid" src="img/portfolio/instagram.png" alt="">
-                    </div>
-                </div>
-
-                <!-- Portfolio Item 2 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
-                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white">
-                                <i class="fas fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img class="img-fluid" src="img/portfolio/gps.png" alt="">
-                    </div>
-                </div>
-
-                <!-- Portfolio Item 3 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
-                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white">
-                                <i class="fas fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img class="img-fluid" src="img/portfolio/flappy.png" alt="">
-                    </div>
-                </div>
-
-                <!-- Portfolio Item 4 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal4">
-                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white">
-                                <i class="fas fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img class="img-fluid" src="img/portfolio/ecole.png" alt="">
-                    </div>
-                </div>
-
-                <!-- Portfolio Item 5 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal5">
-                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white">
-                                <i class="fas fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img class="img-fluid" src="img/portfolio/commercial.png" alt="">
-                    </div>
-                </div>
-
-                <!-- Portfolio Item 6 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal6">
-                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white">
-                                <i class="fas fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img class="img-fluid" src="img/portfolio/angry.png" alt="">
-                    </div>
-                </div>
+                @RenderBody()
+              
 
             </div>
             <!-- /.row -->

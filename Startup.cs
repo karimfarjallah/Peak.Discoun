@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Hangfire;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -47,9 +48,15 @@ namespace Peak.Discoun
                 options.Password.RequiredLength = 4;
                 options.Password.RequireNonAlphanumeric = false;
             });
-          
+
+            services.AddHangfire(option => option
+                    .UseSqlServerStorage(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddHangfireServer();
+
             services.AddSession();
             services.AddControllersWithViews();
+
+         
         }
 
     
@@ -79,6 +86,7 @@ namespace Peak.Discoun
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
+            app.UseHangfireDashboard();
         }
     }
 }

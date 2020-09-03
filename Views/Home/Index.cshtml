@@ -1,8 +1,83 @@
-﻿@{
+﻿@model List<Peak.Discoun.Models.Pack>
+@{
     ViewData["Title"] = "Home Page";
 }
+<div class="content-wrapper ">
+    <!-- Main content -->
+    <section class="content">
+        @foreach (var item1 in Model)
+        {
+            <!-- Default box -->
+            <div class="card card-solid">
+                <div class="card-body">
+                    <div class="row">
+                     
+                        <div class="col-12 col-sm-6">
+                            @foreach (var item in item1.PackProducts)
+                            {
+                                var photoPath = "~/Images/" + (item.Product.ImagePath ?? "noimage.jpg");
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+                            <h3 class="d-inline-block d-sm-none">  </h3>
+
+                            <div class="col-12">
+                                @Html.DisplayFor(modelItem => item.Product.Name)
+                                <img src="@photoPath" asp-append-version="true" class="product-image" alt="Product Image">
+                            </div>
+                             
+                            }
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <h3 class="my-3 text-purple"> @Html.DisplayFor(modelItem => item1.Name)</h3>
+
+                            <hr>
+                            <div class="bg-gray py-2 px-3 mt-4">
+                                <h5>
+                                    <small>
+                                        PRICE
+                                    </small>
+                                </h5>
+                   
+                                <h2 class="mb-0">
+                                    @Html.DisplayFor(modelItem => item1.Price) <small>DT</small>
+                                 </h2>
+
+                            </div>
+
+                            <div class="mt-4">
+                                <div class="btn btn-primary btn-lg btn-flat">
+                                    <i class="fas fa-cart-plus fa-lg mr-2"></i>
+                                    Add to Cart
+                                </div>
+
+                                <div class="btn btn-default btn-lg btn-flat">
+                                    <i class="fas fa-heart fa-lg mr-2"></i>
+                                    Add to Wishlist
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <nav class="w-100">
+                            <div class="nav nav-tabs" id="product-tab" role="tablist">
+                                <a class="nav-item nav-link active" id="product-desc-tab" data-toggle="tab" href="#product-desc" role="tab" aria-controls="product-desc" aria-selected="true">Description</a>
+                                <a class="nav-item nav-link" id="product-comments-tab" data-toggle="tab" href="#product-comments" role="tab" aria-controls="product-comments" aria-selected="false">Comments</a>
+                                <a class="nav-item nav-link" id="product-rating-tab" data-toggle="tab" href="#product-rating" role="tab" aria-controls="product-rating" aria-selected="false">Rating</a>
+                            </div>
+                        </nav>
+                        <div class="tab-content p-3" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="product-desc" role="tabpanel" aria-labelledby="product-desc-tab">  @Html.DisplayFor(modelItem => item1.Description) </div>
+                            <div class="tab-pane fade" id="product-comments" role="tabpanel" aria-labelledby="product-comments-tab"> Great Offer !! </div>
+                            <div class="tab-pane fade" id="product-rating" role="tabpanel" aria-labelledby="product-rating-tab">  Great Offer !! </div>
+                        </div>
+                    </div>
+                   
+                </div>
+                <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+        }
+        </section>
+        
+    <!-- /.content -->
 </div>
+<!-- /.content-wrapper -->

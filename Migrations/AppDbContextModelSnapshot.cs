@@ -225,8 +225,17 @@ namespace Peak.Discoun.Migrations
                     b.Property<DateTime>("DateExpire")
                         .HasColumnType("datetime2");
 
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal>("Price")
+                        .HasColumnType("decimal(18,4)");
+
+                    b.Property<int>("secondes")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 

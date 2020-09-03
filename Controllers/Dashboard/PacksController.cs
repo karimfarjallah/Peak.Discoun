@@ -1,8 +1,10 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using Hangfire;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Peak.Discoun.Context;
 using Peak.Discoun.Models;
+using System;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -49,11 +51,10 @@ namespace Peak.Discoun.Controllers.Dashboard
         }
 
         // POST: Packs/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
-        // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+       
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name")] Pack pack)
+        public async Task<IActionResult> Create([Bind("Id,Name,Price,Description,secondes")] Pack pack)
         {
             if (ModelState.IsValid)
             {
@@ -85,7 +86,7 @@ namespace Peak.Discoun.Controllers.Dashboard
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Name")] Pack pack)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Price,Description,secondes")] Pack pack)
         {
             if (id != pack.Id)
             {
@@ -148,5 +149,26 @@ namespace Peak.Discoun.Controllers.Dashboard
         {
             return _context.Pack.Any(e => e.Id == id);
         }
+
+        [HttpPost]
+      
+        public async Task<IActionResult> disable(int id)
+        {
+            var pack = await _context.Pack.FindAsync(id);
+            _context.Pack.Remove(pack);
+            
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+        }
+
+
+        public IActionResult Discount (int id )
+        {
+            var pack =  _context.Pack.Find(id);
+            
+            BackgroundJob.Schedule(() => DeleteConfirmed(id), TimeSpan.FromSeconds(pack.secondes));
+            return RedirectToAction(nameof(Index));
+        }
+
     }
 }
