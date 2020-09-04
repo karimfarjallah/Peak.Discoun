@@ -1,12 +1,9 @@
-﻿using Peak.Discoun.Models;
-using System;
+﻿using Peak.Discount.Model;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
-namespace Peak.Discoun.Repository
+namespace Peak.Discount.Dashboard.Repository
 {
-   public  interface IPackRepository
+    public  interface IPackRepository
     {
         Pack GetPackById(int Id);
         IEnumerable<Pack> GetAllPack();

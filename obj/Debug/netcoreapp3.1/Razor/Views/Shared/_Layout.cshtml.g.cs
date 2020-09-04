@@ -21,14 +21,14 @@ using Peak.Discoun;
 #nullable disable
 #nullable restore
 #line 2 "C:\Users\karim\Documents\GitHub\Peak.Discoun\Views\_ViewImports.cshtml"
-using Peak.Discoun.Models;
+using Peak.Discount.Model;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 3 "C:\Users\karim\Documents\GitHub\Peak.Discoun\Views\_ViewImports.cshtml"
-using Peak.Discoun.ViewModels;
+using Peak.Discount.Dashboard.ViewModels;
 
 #line default
 #line hidden
@@ -41,7 +41,7 @@ using Microsoft.AspNetCore.Identity;
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"dcefd0a14f09bf9dda1d3c5f51f49fa603941701", @"/Views/Shared/_Layout.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"b7c3b95c19b36eebc736004acd00981f2cd79b67", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"2625d5d8b3c421fd84b9a704c6e0e28c552dc1da", @"/Views/_ViewImports.cshtml")]
     public class Views_Shared__Layout : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("name", "_Connection", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -87,7 +87,7 @@ using Microsoft.AspNetCore.Identity;
         public async override global::System.Threading.Tasks.Task ExecuteAsync()
         {
             WriteLiteral("<!DOCTYPE html>\n<html lang=\"en\">\n\n");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dcefd0a14f09bf9dda1d3c5f51f49fa6039417018432", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dcefd0a14f09bf9dda1d3c5f51f49fa6039417018443", async() => {
                 WriteLiteral("\n\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\n    <meta name=\"description\"");
                 BeginWriteAttribute("content", " content=\"", 188, "\"", 198, 0);
                 EndWriteAttribute();
@@ -119,7 +119,7 @@ using Microsoft.AspNetCore.Identity;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\n\n");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dcefd0a14f09bf9dda1d3c5f51f49fa60394170110381", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dcefd0a14f09bf9dda1d3c5f51f49fa60394170110392", async() => {
                 WriteLiteral(@"
 
     <!-- Navigation -->
@@ -134,7 +134,7 @@ using Microsoft.AspNetCore.Identity;
                 <ul class=""navbar-nav ml-auto"">
                     <li class=""nav-item"">
                         ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "dcefd0a14f09bf9dda1d3c5f51f49fa60394170111467", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "dcefd0a14f09bf9dda1d3c5f51f49fa60394170111478", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_PartialTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper>();
@@ -161,7 +161,7 @@ using Microsoft.AspNetCore.Identity;
                     </li>
                     <li class=""nav-item mx-0 mx-lg-1"">
                         ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dcefd0a14f09bf9dda1d3c5f51f49fa60394170113353", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dcefd0a14f09bf9dda1d3c5f51f49fa60394170113364", async() => {
                     WriteLiteral("Go to Dashboard");
                 }
                 );
@@ -192,7 +192,7 @@ using Microsoft.AspNetCore.Identity;
 
             <!-- Masthead Avatar Image -->
             ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "dcefd0a14f09bf9dda1d3c5f51f49fa60394170115191", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "dcefd0a14f09bf9dda1d3c5f51f49fa60394170115202", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -325,7 +325,7 @@ using Microsoft.AspNetCore.Identity;
                 <div class=""col-lg-8 mx-auto"">
                     <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
                     ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dcefd0a14f09bf9dda1d3c5f51f49fa60394170120954", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dcefd0a14f09bf9dda1d3c5f51f49fa60394170120965", async() => {
                     WriteLiteral(@"
                         <div class=""control-group"">
                             <div class=""form-group floating-label-form-group controls mb-0 pb-2"">

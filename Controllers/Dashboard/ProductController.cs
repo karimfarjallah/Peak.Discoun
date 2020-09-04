@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
-using Peak.Discoun.Models;
-using Peak.Discoun.Repository;
-using Peak.Discoun.ViewModels;
+using Peak.Discount.Model;
+using Peak.Discount.Dashboard.Repository;
+using Peak.Discount.Dashboard.ViewModels;
 using System;
 using System.IO;
 

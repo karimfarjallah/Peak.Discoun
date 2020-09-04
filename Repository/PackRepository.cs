@@ -1,11 +1,9 @@
-﻿using Peak.Discoun.Context;
-using Peak.Discoun.Models;
+﻿using Peak.Discount.Dashboard.Context;
+using Peak.Discount.Model;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
-namespace Peak.Discoun.Repository
+namespace Peak.Discount.Dashboard.Repository
 {
     public class PackRepository : IPackRepository
     {

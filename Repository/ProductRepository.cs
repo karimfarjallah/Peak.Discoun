@@ -1,5 +1,5 @@
 ﻿using Peak.Discount.Dashboard.Context;
-using Peak.Discount.Dashboard.Models;
+using Peak.Discount.Model;
 using System.Collections.Generic;
 
 namespace Peak.Discount.Dashboard.Repository

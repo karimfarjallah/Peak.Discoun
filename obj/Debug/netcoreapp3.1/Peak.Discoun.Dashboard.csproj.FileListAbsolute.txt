@@ -215,3 +215,5 @@ C:\Users\karim\Documents\GitHub\Peak.Discoun\bin\Debug\netcoreapp3.1\runtimes\wi
 C:\Users\karim\Documents\GitHub\Peak.Discoun\obj\Debug\netcoreapp3.1\Peak.Discoun.Dashboard.csproj.CoreCompileInputs.cache
 C:\Users\karim\Documents\GitHub\Peak.Discoun\obj\Debug\netcoreapp3.1\Peak.Discoun.Dashboard.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\karim\Documents\GitHub\Peak.Discoun\obj\Debug\netcoreapp3.1\Peak.Discoun.Dashboard.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\karim\Documents\GitHub\Peak.Discoun\bin\Debug\netcoreapp3.1\Peak.Discount.Model.dll
+C:\Users\karim\Documents\GitHub\Peak.Discoun\bin\Debug\netcoreapp3.1\Peak.Discount.Model.pdb

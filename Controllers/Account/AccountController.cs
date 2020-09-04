@@ -1,10 +1,10 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using Peak.Discoun.ViewModels;
+using Peak.Discount.Dashboard.ViewModels;
 using System.Threading.Tasks;
 
-namespace Peak.Discoun.Areas.Admin.Controllers
+namespace Peak.Discount.Dashboard.Controllers
 {
    
 

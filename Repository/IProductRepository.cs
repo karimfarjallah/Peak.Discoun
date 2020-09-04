@@ -1,12 +1,9 @@
-﻿using Peak.Discoun.Models;
-using System;
+﻿using Peak.Discount.Model;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
-namespace Peak.Discoun.Repository
+namespace Peak.Discount.Dashboard.Repository
 {
-     public  interface IProductRepository
+    public  interface IProductRepository
     {
         Product GetProductById(int Id);
         IEnumerable<Product> GetAllProduct();

@@ -2,10 +2,10 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
-using Peak.Discoun.Context;
+using Peak.Discount.Dashboard.Context;
 using System.Linq;
 
-namespace Peak.Discoun.Controllers
+namespace Peak.Discoun.Dashboard.Controllers
 {
     [Authorize]
     public class HomeController : Controller

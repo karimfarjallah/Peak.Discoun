@@ -2,8 +2,8 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Peak.Discoun.Context;
-using Peak.Discoun.Models;
+using Peak.Discount.Model;
+using Peak.Discount.Dashboard.Context;
 using System;
 using System.Linq;
 using System.Threading.Tasks;

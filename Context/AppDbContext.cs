@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using Peak.Discoun.Models;
+using Peak.Discount.Model;
 
-namespace Peak.Discoun.Context
+namespace Peak.Discount.Dashboard.Context
 {
     public class AppDbContext:IdentityDbContext
     {

@@ -1,15 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Authorization;
+﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using Peak.Discoun.ViewModels;
+using Peak.Discount.Dashboard.ViewModels;
+using System.Threading.Tasks;
 
 namespace Peak.Discount.Dashboard.Controllers.Account
 {
-   [Authorize(Roles = "admin")]
+    [Authorize(Roles = "admin")]
     public class AdministrationController : Controller
     {
         private readonly RoleManager<IdentityRole> roleManager;

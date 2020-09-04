@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using Peak.Discoun.Context;
+using Peak.Discount.Dashboard.Context;
 
 namespace Peak.Discoun.Migrations
 {
